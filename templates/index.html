@@ -10,7 +10,8 @@
     <!-- お試し用 -->
     <!-- <link rel="stylesheet" href="../static/index.css">  -->
     <!-- flask用 -->
-    <link rel="stylesheet" type="text/css" href="{{ staticfile('index.css') }}">
+    <!-- <link rel="stylesheet" type="text/css" href="{{ staticfile('index.css') }}"> -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
 </head>
 
 <body>
@@ -89,7 +90,7 @@
         </div>
         <div class="about2">
             <p>
-                <br><br><br><br><br><br><br>
+                <br><br><br><br><br><br>
                 音楽が時系列データであることから、学習ではLSTM（Long Short-Term Memory）を使用しました。<br>
                 モデルには主にKeras、music21を利用しましたが、著者が１から全て作成した訳ではありませんのでご了承ください。<br>
                 アーティストは気が向いたときに順次追加していきます。
@@ -102,7 +103,7 @@
         <div class="news">
             <h2>News</h2>
             <br>
-            <p><time datetime="2021-08-23">2021年 8月 23日</time></p>
+            <p><time datetime="2021-08-23">2021年 11月 5日</time></p>
             <p>サイトを開設しました！</p>
         </div>
     </section>
