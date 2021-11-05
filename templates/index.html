@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <!-- どのデバイスで見ても見え方を一緒にする = レスポンシブデザイン -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Myssic</title>
+    <meta name="discription" content="MYSSICはAIによってお好みの音楽を生成できるサイトです">
+    <link rel="icon" href="img/icon.png">
+    <!-- お試し用 -->
+    <!-- <link rel="stylesheet" href="../static/index.css">  -->
+    <!-- flask用 -->
+    <link rel="stylesheet" type="text/css" href="{{ staticfile('index.css') }}">
+</head>
+
+<body>
+    <div class="logo">
+        <div class="myssic"><p>MYSSIC</p></div>
+        <div class="myssic2"><p>MYSSIC</p></div>
+        <div class="myssic3"><p>MYSSIC</p></div>
+        <div class="myssic4"><a href="#home">MYSSIC</a></div>
+    </div>
+
+    <div class="kusa">
+        <img src="img/kusa.png">
+        <img src="img/kusa.png">
+        <img src="img/kusa.png">
+        <img src="img/kusa.png">
+        <img src="img/kusa.png">
+    </div>
+
+    <div class="create">
+        <p>
+            <a href="/yoasobi">
+                &emsp;つくってみる&emsp;
+            </a>
+        </p>
+        <!-- <form action="/yoasobi" method="get">
+            <input type="submit" value='YOASOBI'>
+        </form> -->
+    </div>
+
+
+    <header class="header-nav">
+        <nav><a href="#home">&emsp;Home</a></nav>
+        <nav><a href="#about">&emsp;About</a></nav>
+        <nav><a href="#news">&emsp;News</a></nav>
+        <nav><a href="#sample">&emsp;Sample</a></nav>
+    </header>
+    <!-- <img src="img/onpu4.png" class="onpu4"> -->
+    <section id="home">
+        <div class="star"><img src="img/star.png" width="600px"></div>
+        <div class="star1"><img src="img/star1.png" width="600px"></div>
+        <img src="img/logo2.png" alt="MYSSICのロゴです" class="logo2">
+        <p>
+            <span class="underline">
+                きくたび に まいかい へんか する<br>
+                おんがく の あたらしい かたち を<span class="emp"> AI </span>で
+            </span>
+        </p>
+        <p><a href="/yoasobi">&emsp;つくってみる&emsp;</a></p>
+    </section>
+    
+    <div class="gradation1"><br></div>
+    <div class="gradation2"><br></div>
+    <div class="gradation3">
+        <p>
+            毎日同じ音楽を聴いていると、「飽きたなぁ」と感じる事はありませんか。<br>
+            そんなあなたの「一味変わった音楽を聴いてみたい」をAIで叶えます。
+        </p>
+    </div>
+
+
+    <div class="gradation4"><br></div>
+    <div class="gradation5"><br></div>
+
+
+    <section id="about">
+        <div class="about">
+            <h1>About MYSSIC</h1>
+            <p>
+                <span class="emp2">お好みのアーティストっぽい音楽を、AIによって自動で生成するサイトです。</span><br>
+                <br>
+                AIの作る音楽の不思議な雰囲気から、「Mystic(神秘的な,超自然的な)」な「Music」と名付けました。ダサいとか言わないでください。<br>
+                もちろん登録・インストール等は不要で、誰でも簡単にご利用出来ます。毎回違う曲を作ってくれるので、飽き性のあなたにオススメです。<br>
+                <span style="text-decoration: line-through;">著者は４回で飽きました。</span><br>
+                AIにしかできない不規則なメロディーのミステリアスな魅力を感じてもらえると嬉しいです。
+            </p>
+        </div>
+        <div class="about2">
+            <p>
+                <br><br><br><br><br><br><br>
+                音楽が時系列データであることから、学習ではLSTM（Long Short-Term Memory）を使用しました。<br>
+                モデルには主にKeras、music21を利用しましたが、著者が１から全て作成した訳ではありませんのでご了承ください。<br>
+                アーティストは気が向いたときに順次追加していきます。
+            </p>
+        </div>
+    </section>
+
+    <section id="news">
+        <div class="piano"></div>
+        <div class="news">
+            <h2>News</h2>
+            <br>
+            <p><time datetime="2021-08-23">2021年 8月 23日</time></p>
+            <p>サイトを開設しました！</p>
+        </div>
+    </section>
+
+    <section id="sample">
+        <div class="sample">
+            <h3>Sample</h3>
+            <br>
+            <p>全てAIによって作られた音楽です<span class="red">◎</span></p>
+            <br>
+            <audio controls src="audio/sample1.mp3"></audio><br>
+            <audio controls src="audio/sample2.mp3"></audio>
+        </div>
+        <div class="me">
+            <h4>著者</h>
+            <img src="img/keijiicon.jpg" width="140px" alt="著者のアイコンです"  class="pic">
+            <p>
+                沖縄県出身２１歳、エンジニア志望の大学３年生です。数学大好きマンですが現在は文系学部です。プログラミングスクールで３か月程Pythonを学びました。<br>
+                趣味はピアノ、バスケ、カメラ等色々ありますが、最近はプログラミングしかしていません。
+            </p>
+        </div>
+    </section>
+
+    <!-- <form action="/yoasobi" method="get">
+        <input type="submit" value='YOASOBI'>
+    </form> -->
+
+    <div class="tulip">
+        <img src="img/tulip.png" width="320px">
+        <img src="img/tulip2.png" width="320px">
+        <img src="img/tulip3.png" width="320px">
+    </div>
+    <footer>
+        <p>&copy; 2021 Keiji Goya</p>
+    </footer>
+</body>
+
+</html>
