@@ -40,7 +40,7 @@ def audio(filename):
 def img(filename):
     return send_from_directory("templates/img", filename)
 
-# 「YOASOBI」を選択すると、YOASOBIっぽい曲を返す
+# 「作ってみる」を選択すると、YOASOBIっぽい曲を生成して返す
 @app.route("/yoasobi")
 def yoasobi():
     melody_predict.melody()

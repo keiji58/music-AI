@@ -126,6 +126,9 @@ def melody():
     meas = m21.stream.Stream()
     meas.append(m21.meter.TimeSignature('4/4'))
 
+
+# 長い休符の出現がどうしても止められないので、
+# １小説以上は削除する。
     meloindex = melo_sentence.split()
     longrest = []
     for index, m in enumerate(meloindex):
